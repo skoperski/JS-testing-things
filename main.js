@@ -19,12 +19,12 @@ const getCurrenciesList = () => {
       const ratesList = data.rates;
       console.log(ratesList);
       const select = document.createElement("select");
-      select.classList.add("fs36");
+      select.classList.add("fs36", "ml20", "select");
       Object.keys(ratesList).forEach((key) => {
         const option = document.createElement("option");
         option.setAttribute("value", key);
         option.textContent = key;
-        option.classList.add("fs36");
+        option.classList.add("fs36", "option");
         select.appendChild(option);
         ratesDOM.appendChild(select);
       });
@@ -32,7 +32,7 @@ const getCurrenciesList = () => {
       const firstKey = keysArray[0];
 
       const div = document.createElement("div");
-      div.classList.add("fs36", "plr20");
+      div.classList.add("fs36", "plr20", "rateinfo");
       div.innerText = `1 EUR is ${ratesList[firstKey]} ${[firstKey]}`;
       ratesDOM.appendChild(div);
       select.addEventListener("change", (event) => {

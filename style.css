@@ -1,13 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background: linear-gradient(to bottom, #00bfff, #00f7ff);
+}
+
 .fs36 {
   font-size: 36px;
 }
 
 .df {
   display: flex;
+  align-items: center;
 }
 
 .plr20 {
   padding: 0 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  height: 80%;
+}
+
+.btn {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rateinfo {
+  color: #ffffff;
 }
 
 .loader {
